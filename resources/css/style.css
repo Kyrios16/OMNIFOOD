@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Basic setup */
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -122,6 +130,8 @@ input[type="submit"] {
   border-radius: 200px;
   padding: 10px 30px;
   margin-right: 20px;
+  -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s;
+  -o-transition: background-color 0.2s, color 0.2s, border 0.2s;
   transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
 
@@ -150,6 +160,16 @@ input[type="submit"] {
 /*header section start*/
 
 header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(img/hero.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/hero.jpg);
   background-size: cover;
@@ -162,6 +182,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -190,6 +212,8 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
+  -webkit-transition: broder-bottom 0.2s;
+  -o-transition: broder-bottom 0.2s;
   transition: broder-bottom 0.2s;
   padding: 8px 0px;
 }
@@ -237,11 +261,19 @@ header {
   opacity: 50%;
   width: 100%;
   height: auto;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
   transform: scale(1.15);
+  -webkit-transition: opicity 0.5s, scale 0.5s, -webkit-transform 0.5s;
+  transition: opicity 0.5s, scale 0.5s, -webkit-transform 0.5s;
+  -o-transition: transform 0.5s, opicity 0.5s, scale 0.5s;
   transition: transform 0.5s, opicity 0.5s, scale 0.5s;
+  transition: transform 0.5s, opicity 0.5s, scale 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-img img:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
   transform: scale(1.03);
   opacity: 1;
 }
@@ -317,6 +349,8 @@ header {
   border-bottom: 2px solid transparent;
   text-decoration: none;
   padding-bottom: 2px;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  -o-transition: border-bottom 0.2s, color 0.2s;
   transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -331,6 +365,16 @@ header {
 /* testimonials section start  */
 
 .section-testimonials {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(img/back-customers.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/back-customers.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/back-customers.jpg);
   background-size: cover;
@@ -381,6 +425,7 @@ cite img {
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
+  -webkit-box-shadow: 0 2px 2px #cec8c8;
   box-shadow: 0 2px 2px #cec8c8;
 }
 
