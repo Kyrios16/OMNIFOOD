@@ -451,3 +451,70 @@ input[type="checkbox"] {
 }
 
 /* content form section start */
+
+/* footer section start */
+
+footer {
+  background-color: #272727;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-nav {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-nav li a:link,
+.social-nav li a:visited {
+  text-decoration: none;
+  color: #808080;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #fff;
+}
+
+.fa-facebook-square:hover,
+.fa-facebook-square:active {
+  color: #1877f2;
+}
+
+.fa-twitter:hover,
+.fa-twitter:active {
+  color: #1da1f2;
+}
+
+.fa-google-plus-g:hover,
+.fa-google-plus-g:active {
+  color: #ea4335;
+}
+
+.fa-instagram:hover,
+.fa-instagram:active {
+  color: #c32aa3;
+}
+
+.social-nav li a {
+  font-size: 130%;
+}
+
+footer p {
+  font-size: 90%;
+  text-align: center;
+  margin-top: 30px;
+  padding: 50px;
+}
+/* footer section end */
