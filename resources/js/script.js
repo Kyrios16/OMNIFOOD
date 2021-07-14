@@ -105,4 +105,17 @@ $(document).ready(function () {
       offset: "50%",
     }
   );
+
+  //mobile navigation
+  $(".js--mobile-nav-icon").click(function () {
+    $(".js--main-nav").slideToggle(200);
+
+    if ($(".js--mobile-nav-icon i").hasClass("fa-bars")) {
+      $(".js--mobile-nav-icon i").addClass("fa-times");
+      $(".js--mobile-nav-icon i").removeClass("fa-bars");
+    } else {
+      $(".js--mobile-nav-icon i").removeClass("fa-times");
+      $(".js--mobile-nav-icon i").addClass("fa-bars");
+    }
+  });
 });
